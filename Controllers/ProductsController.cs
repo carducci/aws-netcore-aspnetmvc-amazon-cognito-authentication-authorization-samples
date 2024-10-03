@@ -39,7 +39,7 @@ namespace AWS.Samples.Amazon.Cognito.Demo.Controllers
     {
         public IActionResult CallBack()
         {
-            //caputure the user object
+            //capture the user object
             return RedirectToAction("Index", "Products");
         }
 

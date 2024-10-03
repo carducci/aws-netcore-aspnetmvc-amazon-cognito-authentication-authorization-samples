@@ -1,14 +1,14 @@
 Overview
 ========
 
-This walkthrough configures an ASP.NET MVC .NET Core Web App using Amazon
+This walkthrough configures an ASP.NET MVC .NET 8 Web App using Amazon
 Cognito
 
 Topics Covered
 --------------
 
 In this walk-through, you’ll build the following – An Amazon Cognito User Pool
-to authenticate, store and manage users and configure a ASP.NET MVC .NET Core
+to authenticate, store and manage users and configure a ASP.NET MVC .NET 8
 Web App that can be hosted in AWS as well as how to do role based authentication
 in Amazon Cognito using Cognito Groups
 
@@ -22,7 +22,7 @@ Pre-requisites
 -   Visual Studio 2019 Community Edition or better with the AWS toolkit
     installed
 
--   .NET Core 3.1 runtime
+-   .NET 8 runtime
 
 Task 1. Create Amazon Cognito User Pool
 ---------------------------------------
@@ -245,10 +245,10 @@ Make a note of the following:
 
 -   Cognito Domain (fully qualified cognito domain url)
 
-Task 5: Create .NET Core ASP.NET MVC Web Application
+Task 5: Create .NET 8 ASP.NET MVC Web Application
 ----------------------------------------------------
 
-In this task you’ll be creating a .NET Core ASP.NET MVC Web Application. This is
+In this task you’ll be creating a .NET 8 ASP.NET MVC Web Application. This is
 a sample project which will demonstrate the seamless integration of Amazon
 Cognito
 
@@ -256,7 +256,7 @@ Pre-requisites:
 
 -   Visual Studio 2019 Community Edition or higher
 
--   .NET Core 3.1
+-   .NET 8
 
 -   AWS Toolkit for Visual Studio
 
@@ -265,14 +265,14 @@ Pre-requisites:
 -   C\# Coding Skills
 
 Note: You can do all of this on Mac OSX or Linux also. Once you have the .NET
-Core Framework installed, you can install the AWS templates with the dotnet new
+8 Framework installed, you can install the AWS templates with the dotnet new
 command.
 
 #### Step 15: Download the project from S3 bucket or github.
 
-Info: This bucket or repository contains the .NET Core ASP.NET MVC Web
+Info: This bucket or repository contains the .NET 8 ASP.NET MVC Web
 Application Solution using OpenID. This is a simple web application to
-demonstrate Amazon Cognito integration with the ASP.NET MVC Core Web App using
+demonstrate Amazon Cognito integration with the ASP.NET MVC 8 Web App using
 Microsot.AspNetCore.Authentication.OpenIdConnect
 
 #### Step 15a: Open Visual Studio 2019, click FileOpenProject/Solution
@@ -327,10 +327,10 @@ There are few placeholders in the example above.
 
 Make sure you review these values for correctness.
 
-Task 6: Review .NET Core Web Application and Configuration
+Task 6: Review .NET 8 Web Application and Configuration
 ----------------------------------------------------------
 
-The sample application shows how to use the OpenID Connect ASP.NET Core
+The sample application shows how to use the OpenID Connect ASP.NET 8
 middleware to sign-in users using Amazon Cognito User Pool. The middleware is
 initialized in the Startup.cs file by passing the Client Id and the Cognito
 Metadata Url which is configured with the Pool Id from the above. The middleware
